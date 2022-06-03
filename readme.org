@@ -96,3 +96,5 @@ OR
   - Username :: info@raisethebarinitiative.com
 - Squarspace :: https://account.squarespace.com
   - Username :: william.m.zimmerman@gmail.com
+- Hubspot :: https://app.hubspot.com/
+  - Username :: info@raisethebarinitiative.com
