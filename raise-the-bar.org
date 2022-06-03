@@ -75,8 +75,7 @@ OR
 * Series
 - Id
 - Name
-- 
-- 
+- Sku
 
 * EXTRA
 ** Goal Tracking
