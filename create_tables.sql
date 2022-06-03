@@ -108,3 +108,14 @@ CREATE TABLE rbi_participant_event (
     FOREIGN KEY (person_id) REFERENCES rbi_person(id),
     FOREIGN KEY (referral_type_id) REFERENCES rbi_referral_type(id)
 );
+
+CREATE TABLE rbi_volunteer_availability (
+    id int NOT NULL AUTO_INCREMENT,
+    person_id int NOT NULL,
+    day varchar(255),
+    start_time varchar(255),
+    end_time varchar(255),
+    
+    PRIMARY KEY (id),
+    FOREIGN KEY (person_id) REFERENCES rbi_person(id)
+);
