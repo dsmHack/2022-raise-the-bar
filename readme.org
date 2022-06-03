@@ -93,4 +93,6 @@ OR
 
 * Links
 - Wordpress :: https://raisethebarinitiativeorg.wordpress.com
+  - Username :: info@raisethebarinitiative.com
 - Squarspace :: https://account.squarespace.com
+  - Username :: william.m.zimmerman@gmail.com
