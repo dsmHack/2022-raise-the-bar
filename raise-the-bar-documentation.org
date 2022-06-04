@@ -20,6 +20,25 @@ An Admin can navigate to their contact entry or create a new one [[https://raise
 ** Login
 Navigate to [[https://raisethebarinitiative.org/login/][here]]
 
+** Create Series
+- On the home page in the navigation bar click 'Create series' or navigate to [[https://raisethebarinitiative.org/create-series/?theme_preview=true&iframe=true&frame-nonce=94396a94e9&calypso_token=3e612786-0e28-40cd-9c88-333bae4ef8a1][here]].
+- Fill out the form
+
+** Create Event
+- On the home page in the navigation bar click 'Create series' or navigate to [[https://raisethebarinitiative.org/create-series/?theme_preview=true&iframe=true&frame-nonce=94396a94e9&calypso_token=3e612786-0e28-40cd-9c88-333bae4ef8a1][here]].
+- Fill out the form
+  - Start and End time are in military format. Example 02:00 PM would be entered as 14:00.
+
+** Volunteer Event Check-In
+- On the home page in the navigation bar click 'Add volunteer availability' or navigate to [[https://raisethebarinitiative.org/volunteer-event-check-in/?theme_preview=true&iframe=true&frame-nonce=94396a94e9&calypso_token=3e612786-0e28-40cd-9c88-333bae4ef8a1][here]].
+- Fill out the form
+  - Start and End time are in military format. Example 02:00 PM would be entered as 14:00.
+  - Add all necessary tags. Holding the CTRL button and clicking through the list will allow for multi-select.
+    
+** Add Volunteer Availability
+- On the home page in the navigation bar click 'Add volunteer availability' or navigate to [[https://raisethebarinitiative.org/add-volunteer-availability/?theme_preview=true&iframe=true&frame-nonce=94396a94e9&calypso_token=3e612786-0e28-40cd-9c88-333bae4ef8a1][here]].
+- Fill out the form
+  - Start and End time are in military format. Example 02:00 PM would be entered as 14:00.
 
 ** Volunteer
 
