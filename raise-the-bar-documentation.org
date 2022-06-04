@@ -29,6 +29,7 @@ To be a volunteer you need to have a record in:
 - `rbi_volunteer_availability`
   
 ** Admin Only
+
 *** Database Access (TECHNICAL INFO)
 - Login as an admin user.
 - In the top left click 'My Site' in the top left.
@@ -40,11 +41,19 @@ To be a volunteer you need to have a record in:
 
 **** Tables
 - Any table prefixed with `rbi_`
-- wp_zbs_contacts :: All person_id foreign keys in `rbi_` tables are linked to this tables ID field.
+
+- wp_zbs_contacts ::
+  All person_id foreign keys in `rbi_` tables are linked to this tables ID field.
+
+- wp_zbs_customfields ::
+  This contains the gender, referral, comment, and note data for the wp_zbs_contacts table (zbs_owner: 222558138).
+  zbscf_objid = wp_zbs_contacts.ID
+  zbscf_objkey = Custom field name
+  
 - wp_users
 
-***** Visibility
-This is needed due to a limitation on the left hand scrolling menu list of tables
+***** Visibility 
+There is a limitation on the left hand scrolling menu list of tables.
 
 To view all tables, after navigating to 'phpMyAdmin', click on 'Databases'.
 [[./Databases_All_Tables.png]]

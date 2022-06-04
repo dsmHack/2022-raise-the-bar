@@ -1,28 +1,8 @@
-CREATE TABLE rbi_person (
-    id int NOT NULL AUTO_INCREMENT,
-    first_name varchar(255),
-    last_name varchar(255),
-    email varchar(255),
-    gender varchar(1),
-    address_1 varchar(255),
-    address_2 varchar(255),
-    address_city varchar(255),
-    address_state varchar(255),
-    address_zip varchar(255),
-    address_country varchar(255),
-    phone_number varchar(255),
-    referral varchar(255),
-    comments varchar(255),
-    notes varchar(255),
-    
-    PRIMARY KEY (id)
-);
-
 CREATE TABLE rbi_series (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(255),
     sku varchar(255),
-    description varchar(255),
+    description varchar(65000),
     
     PRIMARY KEY (id)
 );
@@ -59,12 +39,18 @@ CREATE TABLE rbi_referral_type (
     PRIMARY KEY (id)
 );
 
+INSERT INTO `rbi_referral_type`(`name`) VALUES ('Social Media')
+INSERT INTO `rbi_referral_type`(`name`) VALUES ('Person')
+INSERT INTO `rbi_referral_type`(`name`) VALUES ('Event')
+INSERT INTO `rbi_referral_type`(`name`) VALUES ('Website')
+INSERT INTO `rbi_referral_type`(`name`) VALUES ('Other')
+
 CREATE TABLE rbi_person_tag (
     person_id int NOT NULL,
     tag_id int NOT NULL,
     
     PRIMARY KEY (person_id, tag_id),
-    FOREIGN KEY (person_id) REFERENCES rbi_person(id),
+    FOREIGN KEY (person_id) REFERENCES wp_zbs_contacts(ID),
     FOREIGN KEY (tag_id) REFERENCES rbi_tag(id)
 );
 
@@ -77,7 +63,7 @@ CREATE TABLE rbi_volunteer_event (
     
     PRIMARY KEY (id),
     FOREIGN KEY (event_id) REFERENCES rbi_event(id),
-    FOREIGN KEY (person_id) REFERENCES rbi_person(id)
+    FOREIGN KEY (person_id) REFERENCES wp_zbs_contacts(ID),
 );
 
 CREATE TABLE rbi_volunteer_event_tag (
@@ -98,7 +84,7 @@ CREATE TABLE rbi_participant_event (
     
     PRIMARY KEY (id),
     FOREIGN KEY (event_id) REFERENCES rbi_event(id),
-    FOREIGN KEY (person_id) REFERENCES rbi_person(id),
+    FOREIGN KEY (person_id) REFERENCES wp_zbs_contacts(ID),
     FOREIGN KEY (referral_type_id) REFERENCES rbi_referral_type(id)
 );
 
@@ -106,9 +92,9 @@ CREATE TABLE rbi_volunteer_availability (
     id int NOT NULL AUTO_INCREMENT,
     person_id int NOT NULL,
     day varchar(255),
-    start_time varchar(255),
-    end_time varchar(255),
+    start_time time(6),
+    end_time time(6),
     
     PRIMARY KEY (id),
-    FOREIGN KEY (person_id) REFERENCES rbi_person(id)
+    FOREIGN KEY (person_id) REFERENCES wp_zbs_contacts(ID),
 );
