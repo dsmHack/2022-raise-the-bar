@@ -15,7 +15,7 @@ Have the person who is wanting a login go to `https://raisethebarinitiative.org/
 An Admin can navigate to their contact entry or create a new one [[https://raisethebarinitiative.org/wp-admin/admin.php?page=manage-customers][here]].
 
 - On an existing contact, click the 'Generate WordPress User' button on the right.
-  [[file+sys:./Generate_WordPress_User.png][Example]]
+  [[./Generate_WordPress_User.png]]
 
 ** Create Contact
 *** 
