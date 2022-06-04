@@ -60,4 +60,3 @@ To view all tables, after navigating to 'phpMyAdmin', click on 'Databases'.
 
 Then click on the database 149782560 to view all of the tables in it.
 [[./Database.png]]
-
