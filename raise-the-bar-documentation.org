@@ -25,11 +25,11 @@ Navigate to [[https://raisethebarinitiative.org/login/][here]]
 
 *** Technical Information
 To be a volunteer you need to have a record in:
-- `wp_zbs_contracts`
+- `wp_zbs_contacts`
 - `rbi_volunteer_availability`
   
 ** Admin Only
-*** Database Access
+*** Database Access (TECHNICAL INFO)
 - Login as an admin user.
 - In the top left click 'My Site' in the top left.
   [[./Admin_My_Site.png]]
@@ -37,4 +37,18 @@ To be a volunteer you need to have a record in:
   [[./Settings_Hosting_Configuration.png]]
 - Click on 'Open phpMyAdmin'
   [[./phpMyAdmin_Database_Access.png]]
+
+**** Tables
+- Any table prefixed with `rbi_`
+- wp_zbs_contacts :: All person_id foreign keys in `rbi_` tables are linked to this tables ID field.
+- wp_users
+
+***** Visibility
+This is needed due to a limitation on the left hand scrolling menu list of tables
+
+To view all tables, after navigating to 'phpMyAdmin', click on 'Databases'.
+[[./Databases_All_Tables.png]]
+
+Then click on the database 149782560 to view all of the tables in it.
+[[./Database.png]]
 
