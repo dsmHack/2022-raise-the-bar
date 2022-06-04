@@ -17,16 +17,24 @@ An Admin can navigate to their contact entry or create a new one [[https://raise
 - On an existing contact, click the 'Generate WordPress User' button on the right.
   [[./Generate_WordPress_User.png]]
 
-** Create Contact
-*** 
-*** 
-
 ** Login
+Navigate to [[https://raisethebarinitiative.org/login/][here]]
 
 
 ** Volunteer
+
+*** Technical Information
 To be a volunteer you need to have a record in:
 - `wp_zbs_contracts`
 - `rbi_volunteer_availability`
   
-** 
+** Admin Only
+*** Database Access
+- Login as an admin user.
+- In the top left click 'My Site' in the top left.
+  [[./Admin_My_Site.png]]
+- On the left navigation bar click on settings
+  [[./Settings_Hosting_Configuration.png]]
+- Click on 'Open phpMyAdmin'
+  [[./phpMyAdmin_Database_Access.png]]
+
