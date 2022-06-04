@@ -1,0 +1,32 @@
+#+STARTUP: content showstars indent
+#+TILE: Raise the Bar Documentation
+
+* Documentation
+** Create User
+*** From User Login
+Have the person who is wanting a login go to `https://raisethebarinitiative.org/register/` and fill out the form.
+
+- *This will create a contact*
+  
+- An Admin can now navigate to their contact entry and update any additional information.
+  Find user [[https://raisethebarinitiative.org/wp-admin/admin.php?page=manage-customers][here]]
+  
+*** From Contacts Page
+An Admin can navigate to their contact entry or create a new one [[https://raisethebarinitiative.org/wp-admin/admin.php?page=manage-customers][here]].
+
+- On an existing contact, click the 'Generate WordPress User' button on the right.
+  [[file+sys:./Generate_WordPress_User.png][Example]]
+
+** Create Contact
+*** 
+*** 
+
+** Login
+
+
+** Volunteer
+To be a volunteer you need to have a record in:
+- `wp_zbs_contracts`
+- `rbi_volunteer_availability`
+  
+** 
