@@ -23,12 +23,6 @@ CREATE TABLE rbi_series (
     name varchar(255),
     sku varchar(255),
     description varchar(255),
-    address_1 varchar(255),
-    address_2 varchar(255),
-    address_city varchar(255),
-    address_state varchar(255),
-    address_zip varchar(255),
-    address_country varchar(255),
     
     PRIMARY KEY (id)
 );
@@ -37,8 +31,8 @@ CREATE TABLE rbi_event (
     id int NOT NULL AUTO_INCREMENT,
     series_id int NOT NULL,
     name varchar(255),
-    start_time varchar(255),
-    end_time varchar(255),
+    start_time time(6),
+    end_time time(6),
     date DATE,
     address_1 varchar(255),
     address_2 varchar(255),
@@ -78,8 +72,8 @@ CREATE TABLE rbi_volunteer_event (
     id int NOT NULL AUTO_INCREMENT,
     event_id int NOT NULL,
     person_id int NOT NULL,
-    start_time varchar(255),
-    end_time varchar(255),
+    start_time time(6),
+    end_time time(6),
     
     PRIMARY KEY (id),
     FOREIGN KEY (event_id) REFERENCES rbi_event(id),
@@ -100,7 +94,7 @@ CREATE TABLE rbi_participant_event (
     event_id int NOT NULL,
     person_id int NOT NULL,
     name varchar(255),
-    referral_type_id int,
+    referral_type_id int(11),
     referral_notes varchar(255),
     
     PRIMARY KEY (id),
