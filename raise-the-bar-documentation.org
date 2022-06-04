@@ -41,6 +41,8 @@ Navigate to [[https://raisethebarinitiative.org/login/][here]]
   - Start and End time are in military format. Example 02:00 PM would be entered as 14:00.
 
 ** Volunteer
+To be considered a volunteer you need to have a contact in the system. Refer to the `Create User` section.
+From here navigate to the 'Add Volunteer Availability' form and add at least one time that this person is available.
 
 *** Technical Information
 To be a volunteer you need to have a record in:
