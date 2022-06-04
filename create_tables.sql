@@ -93,7 +93,6 @@ CREATE TABLE rbi_participant_event (
     id int NOT NULL AUTO_INCREMENT,
     event_id int NOT NULL,
     person_id int NOT NULL,
-    name varchar(255),
     referral_type_id int(11),
     referral_notes varchar(255),
     
